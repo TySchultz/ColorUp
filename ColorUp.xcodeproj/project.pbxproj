@@ -14,6 +14,11 @@
 		100685D819F314F30051458A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100685D719F314F30051458A /* Images.xcassets */; };
 		100685DB19F314F30051458A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 100685D919F314F30051458A /* LaunchScreen.xib */; };
 		100685E719F314F30051458A /* ColorUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100685E619F314F30051458A /* ColorUpTests.swift */; };
+		100685F119F319470051458A /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100685F019F319470051458A /* GameBrain.swift */; };
+		100685F319F325870051458A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100685F219F325870051458A /* GameOverView.swift */; };
+		100685F519F325910051458A /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100685F419F325910051458A /* StartGameView.swift */; };
+		107C060C19F6B00D00E0B8C8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C060B19F6B00D00E0B8C8 /* MenuView.swift */; };
+		6C04C43D3A40CB3B04599DBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C291E5BC59AC5D82AFA32BC1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,14 @@
 		100685E019F314F30051458A /* ColorUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		100685E519F314F30051458A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		100685E619F314F30051458A /* ColorUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUpTests.swift; sourceTree = "<group>"; };
+		100685F019F319470051458A /* GameBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
+		100685F219F325870051458A /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		100685F419F325910051458A /* StartGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
+		102C6E6A19F5C01000FD84A7 /* ColorUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorUp-Bridging-Header.h"; sourceTree = "<group>"; };
+		107C060B19F6B00D00E0B8C8 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		68F4BEE73D49EF2ACA1F7228 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C291E5BC59AC5D82AFA32BC1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1515535D61D57E9C39C3D1D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C04C43D3A40CB3B04599DBC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +78,8 @@
 				100685CA19F314F30051458A /* ColorUp */,
 				100685E319F314F30051458A /* ColorUpTests */,
 				100685C919F314F30051458A /* Products */,
+				3ED0E8A17930824365D6B82E /* Pods */,
+				DA924D741E8A486232A6E646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +102,11 @@
 				100685D919F314F30051458A /* LaunchScreen.xib */,
 				100685CF19F314F30051458A /* ColorUp.xcdatamodeld */,
 				100685CB19F314F30051458A /* Supporting Files */,
+				100685F019F319470051458A /* GameBrain.swift */,
+				100685F219F325870051458A /* GameOverView.swift */,
+				100685F419F325910051458A /* StartGameView.swift */,
+				102C6E6A19F5C01000FD84A7 /* ColorUp-Bridging-Header.h */,
+				107C060B19F6B00D00E0B8C8 /* MenuView.swift */,
 			);
 			path = ColorUp;
 			sourceTree = "<group>";
@@ -115,6 +136,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3ED0E8A17930824365D6B82E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68F4BEE73D49EF2ACA1F7228 /* Pods.debug.xcconfig */,
+				D1515535D61D57E9C39C3D1D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA924D741E8A486232A6E646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C291E5BC59AC5D82AFA32BC1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 100685EA19F314F30051458A /* Build configuration list for PBXNativeTarget "ColorUp" */;
 			buildPhases = (
+				0FC40109D46F668585FF239B /* Check Pods Manifest.lock */,
 				100685C419F314F30051458A /* Sources */,
 				100685C519F314F30051458A /* Frameworks */,
 				100685C619F314F30051458A /* Resources */,
+				68ED60AFB5A2964011B7F029 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,11 +250,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FC40109D46F668585FF239B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68ED60AFB5A2964011B7F029 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		100685C419F314F30051458A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107C060C19F6B00D00E0B8C8 /* MenuView.swift in Sources */,
+				100685F319F325870051458A /* GameOverView.swift in Sources */,
+				100685F519F325910051458A /* StartGameView.swift in Sources */,
+				100685F119F319470051458A /* GameBrain.swift in Sources */,
 				100685D319F314F30051458A /* ViewController.swift in Sources */,
 				100685D119F314F30051458A /* ColorUp.xcdatamodeld in Sources */,
 				100685CE19F314F30051458A /* AppDelegate.swift in Sources */,
@@ -338,21 +415,25 @@
 		};
 		100685EB19F314F30051458A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68F4BEE73D49EF2ACA1F7228 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ColorUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorUp/ColorUp-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		100685EC19F314F30051458A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1515535D61D57E9C39C3D1D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ColorUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ColorUp/ColorUp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +490,7 @@
 				100685EC19F314F30051458A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		100685ED19F314F30051458A /* Build configuration list for PBXNativeTarget "ColorUpTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +499,7 @@
 				100685EF19F314F30051458A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
