@@ -67,7 +67,7 @@ class ViewController: UIViewController, GameBrainProtocol{
     func updateTimer (){
         timeLeft -= 0.1
         
-        tapsLabel.text = NSString(format: "%.1f", timeLeft)
+        tapsLabel.text = NSString(format: "%.1f", timeLeft) as String
 
         if timeLeft <= 0 {
             gameOver()
@@ -88,7 +88,7 @@ class ViewController: UIViewController, GameBrainProtocol{
 
         
         let basicAnimation = POPSpringAnimation()
-        basicAnimation.property            = POPAnimatableProperty.propertyWithName(kPOPViewFrame) as POPAnimatableProperty//[POPAnimatableProperty propertyWithName:kPOPViewFrame];
+        basicAnimation.property            = POPAnimatableProperty.propertyWithName(kPOPViewFrame) as! POPAnimatableProperty//[POPAnimatableProperty propertyWithName:kPOPViewFrame];
         basicAnimation.toValue             = NSValue(CGRect:CGRectMake(screenWidth/screenRatio, screenHeight+100, menuSize*(screenWidth/screenRatio), 4*(screenHeight/8)))
         basicAnimation.springBounciness    = 12.0;
         basicAnimation.delegate            = self;
@@ -108,7 +108,7 @@ class ViewController: UIViewController, GameBrainProtocol{
         gameOverButton.frame = CGRectMake(screenWidth/screenRatio, -4*(screenHeight/8), menuSize*(screenWidth/screenRatio), 300)
         
         let basicAnimation = POPSpringAnimation()
-        basicAnimation.property            = POPAnimatableProperty.propertyWithName(kPOPViewFrame) as POPAnimatableProperty//[POPAnimatableProperty propertyWithName:kPOPViewFrame];
+        basicAnimation.property            = POPAnimatableProperty.propertyWithName(kPOPViewFrame) as! POPAnimatableProperty//[POPAnimatableProperty propertyWithName:kPOPViewFrame];
         basicAnimation.toValue             = NSValue(CGRect:CGRectMake(screenWidth/screenRatio, 2*(screenHeight/8), menuSize*(screenWidth/screenRatio), 4*(screenHeight/8)))
         basicAnimation.springBounciness    = 12.0;
         basicAnimation.delegate            = self;
@@ -136,16 +136,16 @@ class ViewController: UIViewController, GameBrainProtocol{
     }
     
     func createColors() {
-        var startSide = arc4random() % 2
+        let startSide = arc4random() % 2
         
-        var hue =  CGFloat(arc4random() % 256) / 256
-        var saturation = CGFloat((arc4random() % 128) / 256) + 0.5
+        let hue =  CGFloat(arc4random() % 256) / 256
+        let saturation = CGFloat((arc4random() % 128) / 256) + 0.5
         var brightness = CGFloat(arc4random() % 128 / 256 ) + 0.7
-        var color1 = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+        let color1 = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
         
         brightness += 0.2
         
-        var color2 = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+        let color2 = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
 
         if startSide == 0 {
             changeColors(colorRight: color1, colorLeft: color2)
